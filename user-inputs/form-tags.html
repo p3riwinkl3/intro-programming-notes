@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Input</title>
+    </head>
+    <body>
+        <h1>All About You</h1>
+        <form method="POST" action="#">
+            <!-- Text data entry boxes -->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" /><br>
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email"/><br/>
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country"><br/>
+            <label for="lifestory">Life Story</label><br>
+            <textarea id="lifestory" for="lifestory" cols="50" rows="5">Type your Life Story</textarea><br />
+
+            <!-- Input Picker -->
+            <label for="DOB">Date of Birth</label>
+            <input type="date" id="DOB" name="DOB" /><br/>
+            <label for="favoriteColor">Favorite Color</label>
+            <input type="color" id="favoriteColor" /><br />
+            <label for="favoriteNumber">Favorite Number</label>
+            <input type="number" id="favoriteNumber" name="favoriteNumber" min="0" max="5"/><br />
+
+            <!-- Dropdown Menu  -->
+            <label for="favoritecoffee">Favorite Coffee</label><br />
+            <!-- <select id="favoritecoffee" name="favoritecoffee" size="7"> -->
+            <select id="favoritecoffee" name="favoritecoffee">
+                <option value="starbucks">Starbucks</option>
+                <option value="coffeebean">Coffee Bean</option>
+                <option value="arabica">Arabica</option>
+                <option value="figaro">Figaro</option>
+                <option value="casaapolonio">Casa Apolonio</option>
+            </select> <br /> <br />
+
+            <button type="submit">Submit Form</button>
+            <button type="reset">Reset Form</button>
+
+        </form>   
+        <!-- Generic buttons that requires JS for it to do something -->
+        <button id="StartButton">Start</button>
+    </body>
+</html>
